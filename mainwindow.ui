@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>290</width>
+    <height>211</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>StarLight</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>290</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuJeu">
+    <property name="title">
+     <string>Jeu</string>
+    </property>
+    <addaction name="actionDefaut"/>
+    <addaction name="actionPersonnaliser"/>
+    <addaction name="actionGenerateur"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="Partie_en_cours">
+    <property name="title">
+     <string>Partie</string>
+    </property>
+    <addaction name="actionAffichage"/>
+   </widget>
+   <addaction name="menuJeu"/>
+   <addaction name="Partie_en_cours"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionDefaut">
+   <property name="text">
+    <string>Partie par defaut</string>
+   </property>
+  </action>
+  <action name="actionPersonnaliser">
+   <property name="text">
+    <string>Partie Personalisé</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionAffichage">
+   <property name="text">
+    <string>Affichage</string>
+   </property>
+  </action>
+  <action name="actionGenerateur">
+   <property name="text">
+    <string>Generateur</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
