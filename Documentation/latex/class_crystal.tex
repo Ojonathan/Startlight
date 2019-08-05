@@ -1,0 +1,153 @@
+\hypertarget{class_crystal}{}\section{Référence de la classe Crystal}
+\label{class_crystal}\index{Crystal@{Crystal}}
+
+
+{\ttfamily \#include $<$crystal.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Crystal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_crystal}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_crystal_a21597991198db73fdfe051ae1a4fec68}{Crystal}} (const \mbox{\hyperlink{class_point}{Point}} \&p, double r, int m)
+\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_crystal_a256caaa33e440e9a0822fd02fa254353}{get\+Center}} () const
+\item 
+int \mbox{\hyperlink{class_crystal_a31e3be3b9eae48eec045b8227d4a7e63}{get\+Modifier}} () const
+\item 
+double \mbox{\hyperlink{class_crystal_ac776e15863abb706f8bddbeb9889a400}{get\+Radius}} () const
+\item 
+\mbox{\hyperlink{class_ray}{Ray}} $\ast$ \mbox{\hyperlink{class_crystal_a9efb5c57c177f0f2b627be88b484fe9f}{strike}} (\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&ray, \mbox{\hyperlink{class_point}{Point}} p)
+\item 
+void \mbox{\hyperlink{class_crystal_aa14a5622d3e0c4d5f7c58d5e86de5678}{set\+P2circle}} (const \mbox{\hyperlink{class_point}{Point}} value)
+\item 
+void \mbox{\hyperlink{class_crystal_a229bc883860709556e171ee799cab51d}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget)
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_crystal_a45da91e3993e90a57a5f4fd5edda0adb}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_crystal}{Crystal}} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Cette classe modélise les cristaux utilisés dans le jeu. 
+
+Un cristal est un objet circulaire centré en un point, et d\textquotesingle{}un certain rayon. 
+
+Un rayon lumineux passant à travers un crystal modifie sa longueur d\textquotesingle{}onde (en l\textquotesingle{}augmentant ou en la diminuant d\textquotesingle{}une certaine valeur) mais pas sa trajectoire. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_crystal_a21597991198db73fdfe051ae1a4fec68}\label{class_crystal_a21597991198db73fdfe051ae1a4fec68}} 
+\index{Crystal@{Crystal}!Crystal@{Crystal}}
+\index{Crystal@{Crystal}!Crystal@{Crystal}}
+\subsubsection{\texorpdfstring{Crystal()}{Crystal()}}
+{\footnotesize\ttfamily Crystal\+::\+Crystal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p,  }\item[{double}]{r,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+Instancie un cristal centré au point donné, d\textquotesingle{}un certain rayon et modifiant la longueur d\textquotesingle{}onde des rayons qui le traversent d\textquotesingle{}une valeur donnée. 
+\begin{DoxyParams}{Paramètres}
+{\em p} & le centre du cristal \\
+\hline
+{\em r} & le rayon du cristal \\
+\hline
+{\em m} & le modificateur de longueur d\textquotesingle{}onde du cristal \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_crystal_a256caaa33e440e9a0822fd02fa254353}\label{class_crystal_a256caaa33e440e9a0822fd02fa254353}} 
+\index{Crystal@{Crystal}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!Crystal@{Crystal}}
+\subsubsection{\texorpdfstring{getCenter()}{getCenter()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_point}{Point}} \& Crystal\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la coordonée du centre du cristal \begin{DoxyReturn}{Renvoie}
+la coordonée du centre du cristal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_crystal_a31e3be3b9eae48eec045b8227d4a7e63}\label{class_crystal_a31e3be3b9eae48eec045b8227d4a7e63}} 
+\index{Crystal@{Crystal}!getModifier@{getModifier}}
+\index{getModifier@{getModifier}!Crystal@{Crystal}}
+\subsubsection{\texorpdfstring{getModifier()}{getModifier()}}
+{\footnotesize\ttfamily int Crystal\+::get\+Modifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne le modificateur de longueur d\textquotesingle{}onde du cristal \begin{DoxyReturn}{Renvoie}
+le modificateur de longueur d\textquotesingle{}onde du cristal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_crystal_ac776e15863abb706f8bddbeb9889a400}\label{class_crystal_ac776e15863abb706f8bddbeb9889a400}} 
+\index{Crystal@{Crystal}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Crystal@{Crystal}}
+\subsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily double Crystal\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne le rayon du cristal \begin{DoxyReturn}{Renvoie}
+le rayon du cristal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_crystal_a229bc883860709556e171ee799cab51d}\label{class_crystal_a229bc883860709556e171ee799cab51d}} 
+\index{Crystal@{Crystal}!paint@{paint}}
+\index{paint@{paint}!Crystal@{Crystal}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Crystal\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{Q\+Widget $\ast$}]{widget }\end{DoxyParamCaption})}
+
+reemplementaion de la méthode paint. 
+\begin{DoxyParams}{Paramètres}
+{\em painter} & \\
+\hline
+{\em option} & \\
+\hline
+{\em widget} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_crystal_aa14a5622d3e0c4d5f7c58d5e86de5678}\label{class_crystal_aa14a5622d3e0c4d5f7c58d5e86de5678}} 
+\index{Crystal@{Crystal}!setP2circle@{setP2circle}}
+\index{setP2circle@{setP2circle}!Crystal@{Crystal}}
+\subsubsection{\texorpdfstring{setP2circle()}{setP2circle()}}
+{\footnotesize\ttfamily void Crystal\+::set\+P2circle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}}}]{value }\end{DoxyParamCaption})}
+
+modifie le deuxieme point d\textquotesingle{}intersection 
+\begin{DoxyParams}{Paramètres}
+{\em value} & la nouvelle valeur à modifier. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_crystal_a9efb5c57c177f0f2b627be88b484fe9f}\label{class_crystal_a9efb5c57c177f0f2b627be88b484fe9f}} 
+\index{Crystal@{Crystal}!strike@{strike}}
+\index{strike@{strike}!Crystal@{Crystal}}
+\subsubsection{\texorpdfstring{strike()}{strike()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ray}{Ray}} $\ast$ Crystal\+::strike (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&}]{ray,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+reemplementation de la méthode strike 
+\begin{DoxyParams}{Paramètres}
+{\em ray} & un rayon a modifer par l\textquotesingle{}objet \\
+\hline
+{\em p} & le point trouve pour donner fin au rayon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un nouveau rayon si l\textquotesingle{}object autorise 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classobject_star_a5155713af07f8397057706a1eeb843ed}{object\+Star}}.
+
+
+
+\subsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_crystal_a45da91e3993e90a57a5f4fd5edda0adb}\label{class_crystal_a45da91e3993e90a57a5f4fd5edda0adb}} 
+\index{Crystal@{Crystal}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Crystal@{Crystal}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_crystal}{Crystal}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Surcharge l\textquotesingle{}opérateur de flux de sortie pour afficher un récapitulatif des caractéristiques du cristal sous-\/jacent en console. \begin{DoxyReturn}{Renvoie}
+le flux dans lequel le cristal à été imprimé. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+metier\+\_\+abs/crystal.\+h\item 
+metier\+\_\+abs/crystal.\+cpp\end{DoxyCompactItemize}

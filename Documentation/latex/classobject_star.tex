@@ -1,0 +1,67 @@
+\hypertarget{classobject_star}{}\section{Référence de la classe object\+Star}
+\label{classobject_star}\index{objectStar@{objectStar}}
+Graphe d\textquotesingle{}héritage de object\+Star\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classobject_star}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classobject_star_a20d573447ba3a95e5ae2b90cf3187a21}\label{classobject_star_a20d573447ba3a95e5ae2b90cf3187a21}} 
+{\bfseries object\+Star} (string Onename)
+\item 
+virtual \mbox{\hyperlink{class_ray}{Ray}} $\ast$ \mbox{\hyperlink{classobject_star_a5155713af07f8397057706a1eeb843ed}{strike}} (\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&ray, \mbox{\hyperlink{class_point}{Point}} p)
+\item 
+string \mbox{\hyperlink{classobject_star_a39fec832fe18f2e43ea36f7e842a6a82}{get\+Name}} ()
+\item 
+int \mbox{\hyperlink{classobject_star_acc2922cf2379abf69ad3e8533d154883}{get\+Index}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classobject_star_acc2922cf2379abf69ad3e8533d154883}\label{classobject_star_acc2922cf2379abf69ad3e8533d154883}} 
+\index{objectStar@{objectStar}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!objectStar@{objectStar}}
+\subsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily int object\+Star\+::get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retourne l\textquotesingle{}index d\textquotesingle{}un objet creé \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}index de l\textquotesingle{}objet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classobject_star_a39fec832fe18f2e43ea36f7e842a6a82}\label{classobject_star_a39fec832fe18f2e43ea36f7e842a6a82}} 
+\index{objectStar@{objectStar}!getName@{getName}}
+\index{getName@{getName}!objectStar@{objectStar}}
+\subsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string object\+Star\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retourne le nom de de l\textquotesingle{}object un façon de savoir le libellé \begin{DoxyReturn}{Renvoie}
+le nom de l\textquotesingle{}objet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classobject_star_a5155713af07f8397057706a1eeb843ed}\label{classobject_star_a5155713af07f8397057706a1eeb843ed}} 
+\index{objectStar@{objectStar}!strike@{strike}}
+\index{strike@{strike}!objectStar@{objectStar}}
+\subsubsection{\texorpdfstring{strike()}{strike()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ray}{Ray}} $\ast$ object\+Star\+::strike (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&}]{ray,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+strike permet recevoir un rayon et le modifie selon le type d\textquotesingle{}objet 
+\begin{DoxyParams}{Paramètres}
+{\em ray} & un rayon a modifer par l\textquotesingle{}objet \\
+\hline
+{\em p} & le point trouve pour donner fin au rayon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un nouveau rayon si l\textquotesingle{}object autorise 
+\end{DoxyReturn}
+
+
+Réimplémentée dans \mbox{\hyperlink{class_mirror_aa943dbc39297e6c9ca0935ec25ecb96e}{Mirror}}, \mbox{\hyperlink{class_lens_a356e82ca429773ef99f3eb2a85b046bf}{Lens}}, \mbox{\hyperlink{class_dest_aa48ab5e846f1dbad232bb59ea94c52ee}{Dest}}, \mbox{\hyperlink{class_crystal_a9efb5c57c177f0f2b627be88b484fe9f}{Crystal}}, \mbox{\hyperlink{class_nuke_aa5b008c32d4189d23695c5e2652e1e30}{Nuke}}, et \mbox{\hyperlink{class_wall_a9ff7569800f55d50d4059ddfd780afe9}{Wall}}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+metier\+\_\+abs/object\+Star.\+h\item 
+metier\+\_\+abs/object\+Star.\+cpp\end{DoxyCompactItemize}

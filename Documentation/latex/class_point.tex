@@ -1,0 +1,127 @@
+\hypertarget{class_point}{}\section{Référence de la classe Point}
+\label{class_point}\index{Point@{Point}}
+
+
+{\ttfamily \#include $<$point.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point_a257415ad611a16bb73628efcdb87d0fd}{Point}} ()=default
+\item 
+\mbox{\hyperlink{class_point_a001c4958c310b248f5c26037aea38a9c}{Point}} (int x, int y)
+\item 
+int \mbox{\hyperlink{class_point_ac9d5859db121c7d1b89ca89266dca0a3}{getX}} () const
+\item 
+int \mbox{\hyperlink{class_point_a86d10ff46e08462c45b15a8c7ef62d61}{getY}} () const
+\item 
+void \mbox{\hyperlink{class_point_acdc86ab607b2ae8415152883e2629015}{setX}} (int x)
+\item 
+void \mbox{\hyperlink{class_point_afccad787a359f062efc1af5e935a99ba}{setY}} (int y)
+\item 
+void \mbox{\hyperlink{class_point_ad5250aac5c650853f63942b180f3c8a6}{set\+Location}} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_point_aa818efa680e0d94ce91173ccb4b7aa08}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_point}{Point}} \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Cette classe modélise un simple point de coordonées entières, utilisés pour modéliser les positions des objets dans le jeu. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_point_a257415ad611a16bb73628efcdb87d0fd}\label{class_point_a257415ad611a16bb73628efcdb87d0fd}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Instancie le point (0,0) \mbox{\Hypertarget{class_point_a001c4958c310b248f5c26037aea38a9c}\label{class_point_a001c4958c310b248f5c26037aea38a9c}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Instancie le point de coordonnées spécifiées. 
+\begin{DoxyParams}{Paramètres}
+{\em x} & l\textquotesingle{}abscisse du point \\
+\hline
+{\em y} & l\textquotesingle{}ordonnée du point \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_point_ac9d5859db121c7d1b89ca89266dca0a3}\label{class_point_ac9d5859db121c7d1b89ca89266dca0a3}} 
+\index{Point@{Point}!getX@{getX}}
+\index{getX@{getX}!Point@{Point}}
+\subsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Point\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}abscisse du point. \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}abscisse du point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_a86d10ff46e08462c45b15a8c7ef62d61}\label{class_point_a86d10ff46e08462c45b15a8c7ef62d61}} 
+\index{Point@{Point}!getY@{getY}}
+\index{getY@{getY}!Point@{Point}}
+\subsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Point\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}ordonnée du point. \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}ordonnée du point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_ad5250aac5c650853f63942b180f3c8a6}\label{class_point_ad5250aac5c650853f63942b180f3c8a6}} 
+\index{Point@{Point}!setLocation@{setLocation}}
+\index{setLocation@{setLocation}!Point@{Point}}
+\subsubsection{\texorpdfstring{setLocation()}{setLocation()}}
+{\footnotesize\ttfamily void Point\+::set\+Location (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Déplace le point en la coordonnée donnée. 
+\begin{DoxyParams}{Paramètres}
+{\em x} & l\textquotesingle{}abscisse où déplacer le point. \\
+\hline
+{\em y} & l\textquotesingle{}ordonnée où déplacer le point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point_acdc86ab607b2ae8415152883e2629015}\label{class_point_acdc86ab607b2ae8415152883e2629015}} 
+\index{Point@{Point}!setX@{setX}}
+\index{setX@{setX}!Point@{Point}}
+\subsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Point\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+Déplace le point en l\textquotesingle{}abscisse donnée. 
+\begin{DoxyParams}{Paramètres}
+{\em x} & l\textquotesingle{}abscisse où déplacer le point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point_afccad787a359f062efc1af5e935a99ba}\label{class_point_afccad787a359f062efc1af5e935a99ba}} 
+\index{Point@{Point}!setY@{setY}}
+\index{setY@{setY}!Point@{Point}}
+\subsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Point\+::setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+Déplace le point en l\textquotesingle{}ordonnée donnée. 
+\begin{DoxyParams}{Paramètres}
+{\em y} & l\textquotesingle{}ordonnée où déplacer le point. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_point_aa818efa680e0d94ce91173ccb4b7aa08}\label{class_point_aa818efa680e0d94ce91173ccb4b7aa08}} 
+\index{Point@{Point}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Point@{Point}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Surcharge l\textquotesingle{}opérateur de flux de sortie pour afficher un récapitulatif des caractéristiques du point sous-\/jacent en console. \begin{DoxyReturn}{Renvoie}
+le flux dans lequel le point a été imprimé. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+metier\+\_\+abs/point.\+h\item 
+metier\+\_\+abs/point.\+cpp\end{DoxyCompactItemize}

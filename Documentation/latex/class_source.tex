@@ -1,0 +1,169 @@
+\hypertarget{class_source}{}\section{Référence de la classe Source}
+\label{class_source}\index{Source@{Source}}
+
+
+{\ttfamily \#include $<$source.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_source}
+\end{center}
+\end{figure}
+\subsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_source_a9ed44e2a5da1e07c6f3557f1a2e61dfa}\label{class_source_a9ed44e2a5da1e07c6f3557f1a2e61dfa}} 
+void {\bfseries mes\+On} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_source_abac037335dd35772aa077ab3d27ee5b2}{Source}} (const \mbox{\hyperlink{class_point}{Point}} \&p, int e, double a, int wl)
+\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_source_a7d96a9cb9f3b28d3a4339a441f65e99a}{get\+Position}} () const
+\item 
+double \mbox{\hyperlink{class_source_a2759f418c910f00d2b9a5776fd5ad10b}{get\+Angle}} () const
+\item 
+int \mbox{\hyperlink{class_source_ac0eb63fd20a777608037681bbdeccc91}{get\+Edge}} () const
+\item 
+int \mbox{\hyperlink{class_source_a41452078cbe06622e2fc9f724dc473bc}{get\+Wavelength}} () const
+\item 
+bool \mbox{\hyperlink{class_source_a5a4edb05f29a47b66464d9d35883b68c}{is\+On}} () const
+\item 
+void \mbox{\hyperlink{class_source_ae990a8cb9cb54507c34ba56e9e0ab30c}{set\+On}} (bool q)
+\item 
+void \mbox{\hyperlink{class_source_aeaa4bce4230961fb2334b9a2321df9fd}{mouse\+Press\+Event}} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_source_a8d511bf7c5356d4566edef44d3879786}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_source}{Source}} \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Modélise la source lumineuse utilisée dans le jeu. 
+
+La source est un objet carré qui, si allumée, emet un rayon lumineux de longueur d\textquotesingle{}onde donnée dont l\textquotesingle{}angle ne peut pas être changé. 
+
+Le rayon lumineux est émis depuis la position, i.\+e., le coin supérieur gauche, de la source. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_source_abac037335dd35772aa077ab3d27ee5b2}\label{class_source_abac037335dd35772aa077ab3d27ee5b2}} 
+\index{Source@{Source}!Source@{Source}}
+\index{Source@{Source}!Source@{Source}}
+\subsubsection{\texorpdfstring{Source()}{Source()}}
+{\footnotesize\ttfamily Source\+::\+Source (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p,  }\item[{int}]{e,  }\item[{double}]{a,  }\item[{int}]{wl }\end{DoxyParamCaption})}
+
+Instance une nouvelle source de position, de côté et de longueur d\textquotesingle{}onde donnée. 
+
+La position dénote la coordonée du coin supérieur gauche du carré modélisant la source. 
+
+La source est intialement éteinte. 
+
+Si la longueur d\textquotesingle{}onde du rayon lumineux émis n\textquotesingle{}est pas comprise entre 360 nm et 830 nm, elle est réglée sur 600 nm. 
+\begin{DoxyParams}{Paramètres}
+{\em p} & la position de la source. \\
+\hline
+{\em e} & la longueur du côté de la source. \\
+\hline
+{\em wl} & la longueur d\textquotesingle{}onde du rayon lumineux émis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_ray_a478177dabc9f1a3a0ba7d8b388a58b7e}{Ray\+::\+W\+L\+\_\+\+M\+IN}} 
+
+\mbox{\hyperlink{class_ray_add278b4978966f54e3c22e8be2224b7f}{Ray\+::\+W\+L\+\_\+\+M\+AX}} 
+
+\mbox{\hyperlink{class_ray_af4176c69ef62ea83bf84b40d7e1c5560}{Ray\+::\+W\+L\+\_\+\+D\+FT}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_source_a2759f418c910f00d2b9a5776fd5ad10b}\label{class_source_a2759f418c910f00d2b9a5776fd5ad10b}} 
+\index{Source@{Source}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!Source@{Source}}
+\subsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily double Source\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}anle du rayon émis. \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}anle du rayon émis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_source_ac0eb63fd20a777608037681bbdeccc91}\label{class_source_ac0eb63fd20a777608037681bbdeccc91}} 
+\index{Source@{Source}!getEdge@{getEdge}}
+\index{getEdge@{getEdge}!Source@{Source}}
+\subsubsection{\texorpdfstring{getEdge()}{getEdge()}}
+{\footnotesize\ttfamily int Source\+::get\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la longueur du côté du carré. \begin{DoxyReturn}{Renvoie}
+la longueur du côté du carré. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_source_a7d96a9cb9f3b28d3a4339a441f65e99a}\label{class_source_a7d96a9cb9f3b28d3a4339a441f65e99a}} 
+\index{Source@{Source}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Source@{Source}}
+\subsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_point}{Point}} \& Source\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la coordonée du coin supérieur gauche du carré modélisant la destination. \begin{DoxyReturn}{Renvoie}
+la coordonée du coin supérieur gauche du carré modélisant la destination. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_source_a41452078cbe06622e2fc9f724dc473bc}\label{class_source_a41452078cbe06622e2fc9f724dc473bc}} 
+\index{Source@{Source}!getWavelength@{getWavelength}}
+\index{getWavelength@{getWavelength}!Source@{Source}}
+\subsubsection{\texorpdfstring{getWavelength()}{getWavelength()}}
+{\footnotesize\ttfamily int Source\+::get\+Wavelength (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la longueur d\textquotesingle{}onde du rayon émis. \begin{DoxyReturn}{Renvoie}
+la longueur d\textquotesingle{}onde du rayon émis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_source_a5a4edb05f29a47b66464d9d35883b68c}\label{class_source_a5a4edb05f29a47b66464d9d35883b68c}} 
+\index{Source@{Source}!isOn@{isOn}}
+\index{isOn@{isOn}!Source@{Source}}
+\subsubsection{\texorpdfstring{isOn()}{isOn()}}
+{\footnotesize\ttfamily bool Source\+::is\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne vrai si la source émet un rayon lumineux, faux sinon. \begin{DoxyReturn}{Renvoie}
+vrai si la source émet un rayon lumineux, faux sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_source_aeaa4bce4230961fb2334b9a2321df9fd}\label{class_source_aeaa4bce4230961fb2334b9a2321df9fd}} 
+\index{Source@{Source}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!Source@{Source}}
+\subsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Source\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+reemplementation de la méthode \mbox{\hyperlink{class_source_aeaa4bce4230961fb2334b9a2321df9fd}{mouse\+Press\+Event()}}; 
+\begin{DoxyParams}{Paramètres}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_source_ae990a8cb9cb54507c34ba56e9e0ab30c}\label{class_source_ae990a8cb9cb54507c34ba56e9e0ab30c}} 
+\index{Source@{Source}!setOn@{setOn}}
+\index{setOn@{setOn}!Source@{Source}}
+\subsubsection{\texorpdfstring{setOn()}{setOn()}}
+{\footnotesize\ttfamily void Source\+::set\+On (\begin{DoxyParamCaption}\item[{bool}]{q }\end{DoxyParamCaption})}
+
+Allume ou éteint la source. 
+\begin{DoxyParams}{Paramètres}
+{\em q} & vrai si la source doit être allumée, faux sinon. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_source_a8d511bf7c5356d4566edef44d3879786}\label{class_source_a8d511bf7c5356d4566edef44d3879786}} 
+\index{Source@{Source}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Source@{Source}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_source}{Source}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Surcharge l\textquotesingle{}opérateur de flux de sortie pour afficher un récapitulatif des caractéristiques de la source sous-\/jacente en console. \begin{DoxyReturn}{Renvoie}
+le flux dans lequel la source a été imprimée. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+metier\+\_\+abs/source.\+h\item 
+debug/moc\+\_\+source.\+cpp\item 
+metier\+\_\+abs/source.\+cpp\end{DoxyCompactItemize}

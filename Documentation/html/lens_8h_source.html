@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Starlight:  Fichier source de metier_abs/lens.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Starlight
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('lens_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">lens.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LENS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LENS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;point.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;objectStar.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QGraphicsEllipseItem&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_lens.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_lens.html">Lens</a>: <span class="keyword">public</span> <a class="code" href="classobject_star.html">objectStar</a>, <span class="keyword">public</span> QGraphicsEllipseItem</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_point.html">Point</a> pos;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> width;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> height;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> wlmin;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> wlmax;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_point.html">Point</a> p2ellipse;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_lens.html#a5e7d0da4faeccb319f43969427c89bf6">Lens</a>(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; p, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="class_lens.html#a242443a28d03572e5fa1b9d7a066ade2">getPosition</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_lens.html#ac4e4c19fc323c3735b336428d3bc7de0">getWidth</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_lens.html#add1b885535031d16db3252748095a3ba">getHeight</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_lens.html#a3aacfbf2cc2dcd7bef2927305c6038ff">getMinWavelength</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_lens.html#ae4b3e16a607ae895c09b94a8beb7fdf3">getMaxWavelength</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_ray.html">Ray</a> * <a class="code" href="class_lens.html#a356e82ca429773ef99f3eb2a85b046bf">strike</a>(<a class="code" href="class_ray.html">Ray</a> *&amp; ray, <a class="code" href="class_point.html">Point</a> p);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_lens.html#a4b0d35544997517854358dbc05e0d672">setP2ellipse</a>(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> value);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_lens.html#a8662802e4e08ba7e889353eabdb002cc">paint</a>(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option, QWidget *widget);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">friend</span> std::ostream &amp; <a class="code" href="class_lens.html#ad6aeaa87264bd2229fef327ef4c64699">operator&lt;&lt;</a>(std::ostream &amp; out,</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                     <span class="keyword">const</span> <a class="code" href="class_lens.html">Lens</a> &amp; m);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // LENS_H</span></div><div class="ttc" id="class_lens_html_a8662802e4e08ba7e889353eabdb002cc"><div class="ttname"><a href="class_lens.html#a8662802e4e08ba7e889353eabdb002cc">Lens::paint</a></div><div class="ttdeci">void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)</div><div class="ttdef"><b>Definition:</b> lens.cpp:34</div></div>
+<div class="ttc" id="classobject_star_html"><div class="ttname"><a href="classobject_star.html">objectStar</a></div><div class="ttdef"><b>Definition:</b> objectStar.h:11</div></div>
+<div class="ttc" id="class_lens_html_ad6aeaa87264bd2229fef327ef4c64699"><div class="ttname"><a href="class_lens.html#ad6aeaa87264bd2229fef327ef4c64699">Lens::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const Lens &amp;m)</div><div class="ttdef"><b>Definition:</b> lens.cpp:93</div></div>
+<div class="ttc" id="class_lens_html_a3aacfbf2cc2dcd7bef2927305c6038ff"><div class="ttname"><a href="class_lens.html#a3aacfbf2cc2dcd7bef2927305c6038ff">Lens::getMinWavelength</a></div><div class="ttdeci">int getMinWavelength() const</div><div class="ttdef"><b>Definition:</b> lens.cpp:69</div></div>
+<div class="ttc" id="class_lens_html_ac4e4c19fc323c3735b336428d3bc7de0"><div class="ttname"><a href="class_lens.html#ac4e4c19fc323c3735b336428d3bc7de0">Lens::getWidth</a></div><div class="ttdeci">int getWidth() const</div><div class="ttdef"><b>Definition:</b> lens.cpp:59</div></div>
+<div class="ttc" id="class_lens_html_add1b885535031d16db3252748095a3ba"><div class="ttname"><a href="class_lens.html#add1b885535031d16db3252748095a3ba">Lens::getHeight</a></div><div class="ttdeci">int getHeight() const</div><div class="ttdef"><b>Definition:</b> lens.cpp:64</div></div>
+<div class="ttc" id="class_lens_html_a242443a28d03572e5fa1b9d7a066ade2"><div class="ttname"><a href="class_lens.html#a242443a28d03572e5fa1b9d7a066ade2">Lens::getPosition</a></div><div class="ttdeci">const Point &amp; getPosition() const</div><div class="ttdef"><b>Definition:</b> lens.cpp:54</div></div>
+<div class="ttc" id="class_lens_html_ae4b3e16a607ae895c09b94a8beb7fdf3"><div class="ttname"><a href="class_lens.html#ae4b3e16a607ae895c09b94a8beb7fdf3">Lens::getMaxWavelength</a></div><div class="ttdeci">int getMaxWavelength() const</div><div class="ttdef"><b>Definition:</b> lens.cpp:74</div></div>
+<div class="ttc" id="class_lens_html"><div class="ttname"><a href="class_lens.html">Lens</a></div><div class="ttdef"><b>Definition:</b> lens.h:22</div></div>
+<div class="ttc" id="class_lens_html_a356e82ca429773ef99f3eb2a85b046bf"><div class="ttname"><a href="class_lens.html#a356e82ca429773ef99f3eb2a85b046bf">Lens::strike</a></div><div class="ttdeci">Ray * strike(Ray *&amp;ray, Point p)</div><div class="ttdef"><b>Definition:</b> lens.cpp:79</div></div>
+<div class="ttc" id="class_lens_html_a4b0d35544997517854358dbc05e0d672"><div class="ttname"><a href="class_lens.html#a4b0d35544997517854358dbc05e0d672">Lens::setP2ellipse</a></div><div class="ttdeci">void setP2ellipse(const Point value)</div><div class="ttdef"><b>Definition:</b> lens.cpp:88</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdef"><b>Definition:</b> point.h:10</div></div>
+<div class="ttc" id="class_ray_html"><div class="ttname"><a href="class_ray.html">Ray</a></div><div class="ttdef"><b>Definition:</b> ray.h:17</div></div>
+<div class="ttc" id="class_lens_html_a5e7d0da4faeccb319f43969427c89bf6"><div class="ttname"><a href="class_lens.html#a5e7d0da4faeccb319f43969427c89bf6">Lens::Lens</a></div><div class="ttdeci">Lens(const Point &amp;p, int w, int h, int min, int max)</div><div class="ttdef"><b>Definition:</b> lens.cpp:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9ab2e39a8f5af1a45a7c6fbaf7b125d1.html">metier_abs</a></li><li class="navelem"><b>lens.h</b></li>
+    <li class="footer">Généré le Lundi 5 Août 2019 13:44:22 pour Starlight par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+  </ul>
+</div>
+</body>
+</html>

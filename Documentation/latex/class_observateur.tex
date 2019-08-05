@@ -1,0 +1,68 @@
+\hypertarget{class_observateur}{}\section{Référence de la classe Observateur}
+\label{class_observateur}\index{Observateur@{Observateur}}
+
+
+Classe abstraite de base de tout observateur.  
+
+
+
+
+{\ttfamily \#include $<$observateur.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Observateur\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_observateur}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_observateur_a4fcbecba73ee923d201246207b8470ce}{rafraichir}} (\mbox{\hyperlink{class_sujet_d_observation}{Sujet\+D\+Observation}} $\ast$sdo)=0
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure que chaque observateur concret doit implémenter \+: c\textquotesingle{}est cette méthode qu\textquotesingle{}appelle le sujet observé lors d\textquotesingle{}une notification. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_observateur_ac1f97bef4e22594403513069d8269e17}\label{class_observateur_ac1f97bef4e22594403513069d8269e17}} 
+virtual \mbox{\hyperlink{class_observateur_ac1f97bef4e22594403513069d8269e17}{$\sim$\+Observateur}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructeur par défaut. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe abstraite de base de tout observateur. 
+
+Classe dont dérive tout écouteur (ou \char`\"{}observateur\char`\"{}) du modèle de conception \char`\"{}\+Observateur / Sujet\+D\+Observation\char`\"{}.
+
+\begin{DoxyAuthor}{Auteur}
+G\+OF (?). 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_sujet_d_observation}{Sujet\+D\+Observation}}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_observateur_a4fcbecba73ee923d201246207b8470ce}\label{class_observateur_a4fcbecba73ee923d201246207b8470ce}} 
+\index{Observateur@{Observateur}!rafraichir@{rafraichir}}
+\index{rafraichir@{rafraichir}!Observateur@{Observateur}}
+\subsubsection{\texorpdfstring{rafraichir()}{rafraichir()}}
+{\footnotesize\ttfamily virtual void Observateur\+::rafraichir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sujet_d_observation}{Sujet\+D\+Observation}} $\ast$}]{sdo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Méthode virtuelle pure que chaque observateur concret doit implémenter \+: c\textquotesingle{}est cette méthode qu\textquotesingle{}appelle le sujet observé lors d\textquotesingle{}une notification. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sdo} & le sujet d\textquotesingle{}observation qui notifie un changement. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_sujet_d_observation_ab4a833d911377a2dd3c83ce8ce3ac540}{Sujet\+D\+Observation\+::notifier\+Changement()}}. 
+\end{DoxySeeAlso}
+
+
+Implémenté dans \mbox{\hyperlink{classgame_view_a027b8c569f2861ac7633e859eadfae59}{game\+View}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+o\+\_\+sdo/\mbox{\hyperlink{observateur_8h}{observateur.\+h}}\end{DoxyCompactItemize}

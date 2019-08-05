@@ -1,0 +1,413 @@
+\hypertarget{class_mirror}{}\section{Référence de la classe Mirror}
+\label{class_mirror}\index{Mirror@{Mirror}}
+
+
+{\ttfamily \#include $<$mirror.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Mirror\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mirror}
+\end{center}
+\end{figure}
+\subsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_a5ccb7dfd527aca49395a6e9553f415ad}\label{class_mirror_a5ccb7dfd527aca49395a6e9553f415ad}} 
+void {\bfseries action\+Mouse} ()
+\item 
+\mbox{\Hypertarget{class_mirror_aecde4f1876340988a5849f5d65e0d0ba}\label{class_mirror_aecde4f1876340988a5849f5d65e0d0ba}} 
+void {\bfseries drawlimit} (bool draw, \mbox{\hyperlink{class_point}{Point}} p1, \mbox{\hyperlink{class_point}{Point}} p2)
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mirror_abc3fa4b3569596f9234cece92dbdc677}{Mirror}} (const \mbox{\hyperlink{class_point}{Point}} \&p, int len, int x, double a, \mbox{\hyperlink{class_point}{Point}} min, \mbox{\hyperlink{class_point}{Point}} max, double amin, double amax)
+\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_mirror_af419b1b2478e02211ff5b6369453a7ca}{get\+Pivot}} () const
+\item 
+int \mbox{\hyperlink{class_mirror_ad34397fa07da0b668c4baad8bb52feed}{get\+Length}} () const
+\item 
+int \mbox{\hyperlink{class_mirror_a2cf5f8d8bff3cca5acd320addca8c220}{get\+X\+Pad}} () const
+\item 
+double \mbox{\hyperlink{class_mirror_a940340beb2acaf99f7942615f5ef82a0}{get\+Angle}} () const
+\item 
+double \mbox{\hyperlink{class_mirror_ac810eb7d7cc4377e7513cb5de32808de}{get\+Min\+Angle}} () const
+\item 
+double \mbox{\hyperlink{class_mirror_a89bfd8251862a7b732263e3c248e16bc}{get\+Max\+Angle}} () const
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_mirror_ae978b1372db039cb296348062425171c}{get\+Min\+Pivot}} () const
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_mirror_a076c93924786f27c8f203aa2574062bb}{get\+Max\+Pivot}} () const
+\item 
+bool \mbox{\hyperlink{class_mirror_a83f8934245fe330510b031a19fa77fbe}{set\+Pivot}} (const \mbox{\hyperlink{class_point}{Point}} \&)
+\item 
+bool \mbox{\hyperlink{class_mirror_aa5c28cf6d8a88d11f06b4140389c2a06}{set\+Angle}} (double)
+\item 
+bool \mbox{\hyperlink{class_mirror_a146f30f2eac7d90bd48d5b5a47d9828d}{check\+Angle\+Range}} (double) const
+\item 
+bool \mbox{\hyperlink{class_mirror_ace5833b122c139bb448cf95509a681d3}{check\+Pivot\+Range}} (const \mbox{\hyperlink{class_point}{Point}} \&) const
+\item 
+\mbox{\hyperlink{class_ray}{Ray}} $\ast$ \mbox{\hyperlink{class_mirror_aa943dbc39297e6c9ca0935ec25ecb96e}{strike}} (\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&ray, \mbox{\hyperlink{class_point}{Point}} p)
+\item 
+void \mbox{\hyperlink{class_mirror_abac1f72763c81fae43b6524c23577c77}{traceline}} (\mbox{\hyperlink{class_point}{Point}} \&p)
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_mirror_a960b9dfc0c04975b7b5812fd37d9bb61}{get\+Start}} () const
+\begin{DoxyCompactList}\small\item\em get\+Start \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_af3b7feed3826bb6e06d69dcee40d73fe}{set\+Start}} (const \mbox{\hyperlink{class_point}{Point}} \&value)
+\begin{DoxyCompactList}\small\item\em set\+Start \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_mirror_a4d36cefea10dd1853f1b26ead8f5d484}{get\+End}} () const
+\begin{DoxyCompactList}\small\item\em get\+End \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_a23b77987f958dd1272f204e4be6e5f75}{set\+End}} (const \mbox{\hyperlink{class_point}{Point}} \&value)
+\begin{DoxyCompactList}\small\item\em set\+End \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_a01f6bab84d3b879a31c146cfad70d253}{mouse\+Move\+Event}} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em mouse\+Move\+Event \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_ac19e2b03e9ad9657d87b80a76115060f}{mouse\+Press\+Event}} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em mouse\+Press\+Event \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_a21063bba2c74360441c6621c4bc735be}{mouse\+Release\+Event}} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em mouse\+Release\+Event \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_a9c3de9b4d76be5e56442494fd6740773}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget)
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_mirror_a18a9b61e5b925d085bd1560fcf289b0c}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_mirror}{Mirror}} \&m)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Cette classe modélise les miroirs utilisés dans le jeu. 
+
+Un miroir est un segment de droite dont la propriété est de réfléchir la lumière d\textquotesingle{}un seul côté uniquement. Si un rayon lumineux touche un miroir du côté non réfléchissant, le miroir se comporte comme un mur. 
+
+Les miroirs sont capables d\textquotesingle{}être déplacés et pivotés dans une certaine limite. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_mirror_abc3fa4b3569596f9234cece92dbdc677}\label{class_mirror_abc3fa4b3569596f9234cece92dbdc677}} 
+\index{Mirror@{Mirror}!Mirror@{Mirror}}
+\index{Mirror@{Mirror}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{Mirror()}{Mirror()}}
+{\footnotesize\ttfamily Mirror\+::\+Mirror (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p,  }\item[{int}]{len,  }\item[{int}]{x,  }\item[{double}]{a,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{min,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{max,  }\item[{double}]{amin,  }\item[{double}]{amax }\end{DoxyParamCaption})}
+
+Instancie un miroir en une position donnée, d\textquotesingle{}une certaine longueur et orienté d\textquotesingle{}un certain angle. 
+
+Ce constructeur permet également aux miroirs de pivoter dans une certaine limite. 
+
+Si l\textquotesingle{}intervalle de limite de déplacement (e.\+g., sur les abscisses) \mbox{[}a,b\mbox{]} est tel que a = b, le miroir ne peut être déplacé sur l\textquotesingle{}axe considéré. 
+
+Si l\textquotesingle{}intervalle de limite d\textquotesingle{}inclinaison \mbox{[}a,b\mbox{]} est tel que a $<$ b, le miroir pivote dans le sens horloger, si a = b le miroir ne peut pas pivoter, si a $>$ b, le miroir pivote dans le sens anti-\/horloger. 
+\begin{DoxyParams}{Paramètres}
+{\em p} & la position (et le point de pivot) du miroir \\
+\hline
+{\em len} & la longueur du miroir \\
+\hline
+{\em x} & le décallage du pivot par rapport au bord gauche du miroir \\
+\hline
+{\em a} & l\textquotesingle{}angle d\textquotesingle{}inclinaison du miroir \\
+\hline
+{\em min} & l\textquotesingle{}abscisse et l\textquotesingle{}ordonnée minimum du miroir. \\
+\hline
+{\em max} & l\textquotesingle{}abscisse et l\textquotesingle{}ordonnée maximum du miroir. \\
+\hline
+{\em amin} & l\textquotesingle{}angle d\textquotesingle{}inclinaison minimum du miroir. \\
+\hline
+{\em amax} & l\textquotesingle{}angle d\textquotesingle{}inclinaison maximum du miroir. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_mirror_a146f30f2eac7d90bd48d5b5a47d9828d}\label{class_mirror_a146f30f2eac7d90bd48d5b5a47d9828d}} 
+\index{Mirror@{Mirror}!checkAngleRange@{checkAngleRange}}
+\index{checkAngleRange@{checkAngleRange}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{checkAngleRange()}{checkAngleRange()}}
+{\footnotesize\ttfamily bool Mirror\+::check\+Angle\+Range (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption}) const}
+
+Retoune vrai si le miroir peut être pivoté sur l\textquotesingle{}angle donné, retourne faux sinon. \begin{DoxyReturn}{Renvoie}
+vrai si le miroir peut être pivoté sur l\textquotesingle{}angle donné, retourne faux sinon. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_mirror_a940340beb2acaf99f7942615f5ef82a0}{Mirror\+::get\+Angle()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_mirror_ace5833b122c139bb448cf95509a681d3}\label{class_mirror_ace5833b122c139bb448cf95509a681d3}} 
+\index{Mirror@{Mirror}!checkPivotRange@{checkPivotRange}}
+\index{checkPivotRange@{checkPivotRange}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{checkPivotRange()}{checkPivotRange()}}
+{\footnotesize\ttfamily bool Mirror\+::check\+Pivot\+Range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p }\end{DoxyParamCaption}) const}
+
+Retoune vrai si le miroir peut être déplacé en la position donnée, retourne faux sinon. \begin{DoxyReturn}{Renvoie}
+vrai si le miroir peut être déplacé en la position donnée, retourne faux sinon. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_mirror_af419b1b2478e02211ff5b6369453a7ca}{Mirror\+::get\+Pivot()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_mirror_a940340beb2acaf99f7942615f5ef82a0}\label{class_mirror_a940340beb2acaf99f7942615f5ef82a0}} 
+\index{Mirror@{Mirror}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily double Mirror\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}inclinaison du miroir. \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}inclinaison du miroir. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_a4d36cefea10dd1853f1b26ead8f5d484}\label{class_mirror_a4d36cefea10dd1853f1b26ead8f5d484}} 
+\index{Mirror@{Mirror}!getEnd@{getEnd}}
+\index{getEnd@{getEnd}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getEnd()}{getEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Mirror\+::get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+End 
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_ad34397fa07da0b668c4baad8bb52feed}\label{class_mirror_ad34397fa07da0b668c4baad8bb52feed}} 
+\index{Mirror@{Mirror}!getLength@{getLength}}
+\index{getLength@{getLength}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily int Mirror\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la longueur du miroir \begin{DoxyReturn}{Renvoie}
+la longueur du miroir 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_a89bfd8251862a7b732263e3c248e16bc}\label{class_mirror_a89bfd8251862a7b732263e3c248e16bc}} 
+\index{Mirror@{Mirror}!getMaxAngle@{getMaxAngle}}
+\index{getMaxAngle@{getMaxAngle}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getMaxAngle()}{getMaxAngle()}}
+{\footnotesize\ttfamily double Mirror\+::get\+Max\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}inclinaison maximum du miroir. 
+
+Si l\textquotesingle{}intervalle de limite d\textquotesingle{}inclinaison \mbox{[}a,b\mbox{]} est tel que a $<$ b, le miroir pivote dans le sens horloger, si a = b le miroir ne peut pas pivoter, si a $>$ b, le miroir pivote dans le sens anti-\/horloger. Si a = b = 0, le miroir peut être pivoté librement. \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}inclinaison minimum du miroir. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_a076c93924786f27c8f203aa2574062bb}\label{class_mirror_a076c93924786f27c8f203aa2574062bb}} 
+\index{Mirror@{Mirror}!getMaxPivot@{getMaxPivot}}
+\index{getMaxPivot@{getMaxPivot}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getMaxPivot()}{getMaxPivot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Mirror\+::get\+Max\+Pivot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la position maximum du miroir. 
+
+Si l\textquotesingle{}intervalle de limite de déplacement (e.\+g., sur les abscisses) \mbox{[}a,b\mbox{]} est tel que a = b, le miroir ne peut être déplacé sur l\textquotesingle{}axe considéré. Si a = b = 0, le miroir peut être déplacé librement. \begin{DoxyReturn}{Renvoie}
+la position minimum du miroir. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_ac810eb7d7cc4377e7513cb5de32808de}\label{class_mirror_ac810eb7d7cc4377e7513cb5de32808de}} 
+\index{Mirror@{Mirror}!getMinAngle@{getMinAngle}}
+\index{getMinAngle@{getMinAngle}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getMinAngle()}{getMinAngle()}}
+{\footnotesize\ttfamily double Mirror\+::get\+Min\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}inclinaison minimum du miroir. 
+
+Si l\textquotesingle{}intervalle de limite d\textquotesingle{}inclinaison \mbox{[}a,b\mbox{]} est tel que a $<$ b, le miroir pivote dans le sens horloger, si a = b le miroir ne peut pas pivoter, si a $>$ b, le miroir pivote dans le sens anti-\/horloger. Si a = b = 0, le miroir peut être pivoté librement. \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}inclinaison minimum du miroir. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_ae978b1372db039cb296348062425171c}\label{class_mirror_ae978b1372db039cb296348062425171c}} 
+\index{Mirror@{Mirror}!getMinPivot@{getMinPivot}}
+\index{getMinPivot@{getMinPivot}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getMinPivot()}{getMinPivot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Mirror\+::get\+Min\+Pivot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la position minimum du miroir. 
+
+Si l\textquotesingle{}intervalle de limite de déplacement (e.\+g., sur les abscisses) \mbox{[}a,b\mbox{]} est tel que a = b, le miroir ne peut être déplacé sur l\textquotesingle{}axe considéré. Si a = b = 0, le miroir peut être déplacé librement. \begin{DoxyReturn}{Renvoie}
+la position minimum du miroir. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_af419b1b2478e02211ff5b6369453a7ca}\label{class_mirror_af419b1b2478e02211ff5b6369453a7ca}} 
+\index{Mirror@{Mirror}!getPivot@{getPivot}}
+\index{getPivot@{getPivot}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getPivot()}{getPivot()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_point}{Point}} \& Mirror\+::get\+Pivot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la position (et le pivot) du miroir. \begin{DoxyReturn}{Renvoie}
+la position (et le pivot) du miroir. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_a960b9dfc0c04975b7b5812fd37d9bb61}\label{class_mirror_a960b9dfc0c04975b7b5812fd37d9bb61}} 
+\index{Mirror@{Mirror}!getStart@{getStart}}
+\index{getStart@{getStart}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getStart()}{getStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Mirror\+::get\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Start 
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_a2cf5f8d8bff3cca5acd320addca8c220}\label{class_mirror_a2cf5f8d8bff3cca5acd320addca8c220}} 
+\index{Mirror@{Mirror}!getXPad@{getXPad}}
+\index{getXPad@{getXPad}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{getXPad()}{getXPad()}}
+{\footnotesize\ttfamily int Mirror\+::get\+X\+Pad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne le décallage du pivot par rapport au bord gauche du miroir. \begin{DoxyReturn}{Renvoie}
+le décallage du pivot par rapport au bord gauche du miroir. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_a01f6bab84d3b879a31c146cfad70d253}\label{class_mirror_a01f6bab84d3b879a31c146cfad70d253}} 
+\index{Mirror@{Mirror}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void Mirror\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+mouse\+Move\+Event 
+
+reemplementaion de la méthode \mbox{\hyperlink{class_mirror_a01f6bab84d3b879a31c146cfad70d253}{mouse\+Move\+Event()}}; 
+\begin{DoxyParams}{Paramètres}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_ac19e2b03e9ad9657d87b80a76115060f}\label{class_mirror_ac19e2b03e9ad9657d87b80a76115060f}} 
+\index{Mirror@{Mirror}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Mirror\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+mouse\+Press\+Event 
+
+reemplementaion de la méthode \mbox{\hyperlink{class_mirror_ac19e2b03e9ad9657d87b80a76115060f}{mouse\+Press\+Event()}}; 
+\begin{DoxyParams}{Paramètres}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_a21063bba2c74360441c6621c4bc735be}\label{class_mirror_a21063bba2c74360441c6621c4bc735be}} 
+\index{Mirror@{Mirror}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void Mirror\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+mouse\+Release\+Event 
+
+reemplementaion de la méthode \mbox{\hyperlink{class_mirror_a21063bba2c74360441c6621c4bc735be}{mouse\+Release\+Event()}}; 
+\begin{DoxyParams}{Paramètres}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_a9c3de9b4d76be5e56442494fd6740773}\label{class_mirror_a9c3de9b4d76be5e56442494fd6740773}} 
+\index{Mirror@{Mirror}!paint@{paint}}
+\index{paint@{paint}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Mirror\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{Q\+Widget $\ast$}]{widget }\end{DoxyParamCaption})}
+
+reemplementaion de la méthode paint. 
+\begin{DoxyParams}{Paramètres}
+{\em painter} & \\
+\hline
+{\em option} & \\
+\hline
+{\em widget} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_aa5c28cf6d8a88d11f06b4140389c2a06}\label{class_mirror_aa5c28cf6d8a88d11f06b4140389c2a06}} 
+\index{Mirror@{Mirror}!setAngle@{setAngle}}
+\index{setAngle@{setAngle}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{setAngle()}{setAngle()}}
+{\footnotesize\ttfamily bool Mirror\+::set\+Angle (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+Pivote le miroir sur un angle donné, si c\textquotesingle{}est autorisé. Retourne vrai si la rotation a été effectuée correctement, retourne faux sinon. \begin{DoxyReturn}{Renvoie}
+vrai si la rotation a été effectuée correctement, retourne faux sinon. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_mirror_a940340beb2acaf99f7942615f5ef82a0}{Mirror\+::get\+Angle()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_mirror_a23b77987f958dd1272f204e4be6e5f75}\label{class_mirror_a23b77987f958dd1272f204e4be6e5f75}} 
+\index{Mirror@{Mirror}!setEnd@{setEnd}}
+\index{setEnd@{setEnd}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{setEnd()}{setEnd()}}
+{\footnotesize\ttfamily void Mirror\+::set\+End (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+set\+End 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_a83f8934245fe330510b031a19fa77fbe}\label{class_mirror_a83f8934245fe330510b031a19fa77fbe}} 
+\index{Mirror@{Mirror}!setPivot@{setPivot}}
+\index{setPivot@{setPivot}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{setPivot()}{setPivot()}}
+{\footnotesize\ttfamily bool Mirror\+::set\+Pivot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p }\end{DoxyParamCaption})}
+
+Déplace le miroir en la position donnée, si c\textquotesingle{}est autorisé. Retourne vrai si le déplacement a été effectué correctement, retourne faux sinon. \begin{DoxyReturn}{Renvoie}
+vrai si le déplacement a été effectué correctement, retourne faux sinon. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_mirror_af419b1b2478e02211ff5b6369453a7ca}{Mirror\+::get\+Pivot()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_mirror_af3b7feed3826bb6e06d69dcee40d73fe}\label{class_mirror_af3b7feed3826bb6e06d69dcee40d73fe}} 
+\index{Mirror@{Mirror}!setStart@{setStart}}
+\index{setStart@{setStart}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{setStart()}{setStart()}}
+{\footnotesize\ttfamily void Mirror\+::set\+Start (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+set\+Start 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_aa943dbc39297e6c9ca0935ec25ecb96e}\label{class_mirror_aa943dbc39297e6c9ca0935ec25ecb96e}} 
+\index{Mirror@{Mirror}!strike@{strike}}
+\index{strike@{strike}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{strike()}{strike()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ray}{Ray}} $\ast$ Mirror\+::strike (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&}]{ray,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+reemplementation de la méthode strike 
+\begin{DoxyParams}{Paramètres}
+{\em ray} & un rayon a modifer par l\textquotesingle{}objet \\
+\hline
+{\em p} & le point trouve pour donner fin au rayon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un nouveau rayon si l\textquotesingle{}object autorise 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classobject_star_a5155713af07f8397057706a1eeb843ed}{object\+Star}}.
+
+\mbox{\Hypertarget{class_mirror_abac1f72763c81fae43b6524c23577c77}\label{class_mirror_abac1f72763c81fae43b6524c23577c77}} 
+\index{Mirror@{Mirror}!traceline@{traceline}}
+\index{traceline@{traceline}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{traceline()}{traceline()}}
+{\footnotesize\ttfamily void Mirror\+::traceline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{p }\end{DoxyParamCaption})}
+
+permet calculer la position de la ligne ansi que les points de depart et final. 
+\begin{DoxyParams}{Paramètres}
+{\em p} & point de pivot pour calculer la nouvelle position \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_mirror_a18a9b61e5b925d085bd1560fcf289b0c}\label{class_mirror_a18a9b61e5b925d085bd1560fcf289b0c}} 
+\index{Mirror@{Mirror}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Mirror@{Mirror}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_mirror}{Mirror}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Surcharge l\textquotesingle{}opérateur de flux de sortie pour afficher un récapitulatif des caractéristiques du miroir sous-\/jacent en console. \begin{DoxyReturn}{Renvoie}
+le flux dans lequel le miroir a été imprimé. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+metier\+\_\+abs/mirror.\+h\item 
+debug/moc\+\_\+mirror.\+cpp\item 
+metier\+\_\+abs/mirror.\+cpp\end{DoxyCompactItemize}

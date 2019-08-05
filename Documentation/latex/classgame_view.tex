@@ -1,0 +1,56 @@
+\hypertarget{classgame_view}{}\section{Référence de la classe game\+View}
+\label{classgame_view}\index{gameView@{gameView}}
+Graphe d\textquotesingle{}héritage de game\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgame_view}
+\end{center}
+\end{figure}
+\subsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgame_view_a5d79ea7172d23e36def6215432707af4}\label{classgame_view_a5d79ea7172d23e36def6215432707af4}} 
+void {\bfseries compute} ()
+\item 
+\mbox{\Hypertarget{classgame_view_a5ceb8f9cf61ad82c15b015be37772d73}\label{classgame_view_a5ceb8f9cf61ad82c15b015be37772d73}} 
+void {\bfseries limit} (bool draw, \mbox{\hyperlink{class_point}{Point}} p1, \mbox{\hyperlink{class_point}{Point}} p2)
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgame_view_a0725f9e3dda1a1f2bab5e2aa066ad797}\label{classgame_view_a0725f9e3dda1a1f2bab5e2aa066ad797}} 
+{\bfseries game\+View} (\mbox{\hyperlink{class_level}{Level}} $\ast$level, Q\+Widget $\ast$parent=nullptr)
+\item 
+void \mbox{\hyperlink{classgame_view_a027b8c569f2861ac7633e859eadfae59}{rafraichir}} (\mbox{\hyperlink{class_sujet_d_observation}{Sujet\+D\+Observation}} $\ast$sdo)
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure que chaque observateur concret doit implémenter \+: c\textquotesingle{}est cette méthode qu\textquotesingle{}appelle le sujet observé lors d\textquotesingle{}une notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classgame_view_a027b8c569f2861ac7633e859eadfae59}\label{classgame_view_a027b8c569f2861ac7633e859eadfae59}} 
+\index{gameView@{gameView}!rafraichir@{rafraichir}}
+\index{rafraichir@{rafraichir}!gameView@{gameView}}
+\subsubsection{\texorpdfstring{rafraichir()}{rafraichir()}}
+{\footnotesize\ttfamily void game\+View\+::rafraichir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sujet_d_observation}{Sujet\+D\+Observation}} $\ast$}]{sdo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle pure que chaque observateur concret doit implémenter \+: c\textquotesingle{}est cette méthode qu\textquotesingle{}appelle le sujet observé lors d\textquotesingle{}une notification. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sdo} & le sujet d\textquotesingle{}observation qui notifie un changement. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_sujet_d_observation_ab4a833d911377a2dd3c83ce8ce3ac540}{Sujet\+D\+Observation\+::notifier\+Changement()}}. 
+\end{DoxySeeAlso}
+
+
+Implémente \mbox{\hyperlink{class_observateur_a4fcbecba73ee923d201246207b8470ce}{Observateur}}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+gameview.\+h\item 
+gameview.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{class_wall}{}\section{Référence de la classe Wall}
+\label{class_wall}\index{Wall@{Wall}}
+
+
+{\ttfamily \#include $<$wall.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Wall\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wall}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wall_aba4c8b8e0290442241a406781940ad18}{Wall}} (const \mbox{\hyperlink{class_point}{Point}} \&p1, const \mbox{\hyperlink{class_point}{Point}} \&p2)
+\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_wall_a174f962e72ade4212b51f7434cf2b514}{get\+Start}} () const
+\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_wall_ab710ef6a53f459ed7ce5667e55b0e9b9}{get\+End}} () const
+\item 
+\mbox{\hyperlink{class_ray}{Ray}} $\ast$ \mbox{\hyperlink{class_wall_a9ff7569800f55d50d4059ddfd780afe9}{strike}} (\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&ray, \mbox{\hyperlink{class_point}{Point}} p)
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_wall_a762127d24b7c3e98f9da57702f628a78}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_wall}{Wall}} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Cette classe modélise les murs utilisés dans le jeu. 
+
+Les murs sont des segments de droite qui ne réfléchissent pas la lumière. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_wall_aba4c8b8e0290442241a406781940ad18}\label{class_wall_aba4c8b8e0290442241a406781940ad18}} 
+\index{Wall@{Wall}!Wall@{Wall}}
+\index{Wall@{Wall}!Wall@{Wall}}
+\subsubsection{\texorpdfstring{Wall()}{Wall()}}
+{\footnotesize\ttfamily Wall\+::\+Wall (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p1,  }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p2 }\end{DoxyParamCaption})}
+
+Instancie un mur. 
+\begin{DoxyParams}{Paramètres}
+{\em p1} & le début du mur. \\
+\hline
+{\em p2} & la fin du mur. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_wall_ab710ef6a53f459ed7ce5667e55b0e9b9}\label{class_wall_ab710ef6a53f459ed7ce5667e55b0e9b9}} 
+\index{Wall@{Wall}!getEnd@{getEnd}}
+\index{getEnd@{getEnd}!Wall@{Wall}}
+\subsubsection{\texorpdfstring{getEnd()}{getEnd()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_point}{Point}} \& Wall\+::get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la fin du mur. \begin{DoxyReturn}{Renvoie}
+la fin du mur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_wall_a174f962e72ade4212b51f7434cf2b514}\label{class_wall_a174f962e72ade4212b51f7434cf2b514}} 
+\index{Wall@{Wall}!getStart@{getStart}}
+\index{getStart@{getStart}!Wall@{Wall}}
+\subsubsection{\texorpdfstring{getStart()}{getStart()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_point}{Point}} \& Wall\+::get\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne le début du mur. \begin{DoxyReturn}{Renvoie}
+le début du mur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_wall_a9ff7569800f55d50d4059ddfd780afe9}\label{class_wall_a9ff7569800f55d50d4059ddfd780afe9}} 
+\index{Wall@{Wall}!strike@{strike}}
+\index{strike@{strike}!Wall@{Wall}}
+\subsubsection{\texorpdfstring{strike()}{strike()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ray}{Ray}} $\ast$ Wall\+::strike (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&}]{ray,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+reemplementation de la méthode strike 
+\begin{DoxyParams}{Paramètres}
+{\em ray} & un rayon a modifer par l\textquotesingle{}objet \\
+\hline
+{\em p} & le point trouvé pour donner fin au rayon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un nouveau rayon si l\textquotesingle{}object autorise 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classobject_star_a5155713af07f8397057706a1eeb843ed}{object\+Star}}.
+
+
+
+\subsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_wall_a762127d24b7c3e98f9da57702f628a78}\label{class_wall_a762127d24b7c3e98f9da57702f628a78}} 
+\index{Wall@{Wall}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Wall@{Wall}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_wall}{Wall}} \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Surcharge l\textquotesingle{}opérateur de flux de sortie pour afficher un récapitulatif des caractéristiques du mur sous-\/jacent en console. \begin{DoxyReturn}{Renvoie}
+le flux dans lequel le mur a été imprimé. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+metier\+\_\+abs/wall.\+h\item 
+metier\+\_\+abs/wall.\+cpp\end{DoxyCompactItemize}

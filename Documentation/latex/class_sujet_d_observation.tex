@@ -1,0 +1,106 @@
+\hypertarget{class_sujet_d_observation}{}\section{Référence de la classe Sujet\+D\+Observation}
+\label{class_sujet_d_observation}\index{SujetDObservation@{SujetDObservation}}
+
+
+Classe de base de tout \char`\"{}sujet d\textquotesingle{}observation\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$sujetdobservation.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Sujet\+D\+Observation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sujet_d_observation}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sujet_d_observation_a7dea5b7feaec2bb1b33014e449acddac}\label{class_sujet_d_observation_a7dea5b7feaec2bb1b33014e449acddac}} 
+virtual \mbox{\hyperlink{class_sujet_d_observation_a7dea5b7feaec2bb1b33014e449acddac}{$\sim$\+Sujet\+D\+Observation}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructeur par défaut. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sujet_d_observation_a697269174b77f64d270e839ab5557a1e}{attacher}} (\mbox{\hyperlink{class_observateur}{Observateur}} $\ast$obs)
+\begin{DoxyCompactList}\small\item\em Méthode permettant à un observateur de s\textquotesingle{}enregistrer comme écouteur du sujet d\textquotesingle{}observation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sujet_d_observation_a05e8d7285a4f1c79d9f53e274653ea1b}{detacher}} (\mbox{\hyperlink{class_observateur}{Observateur}} $\ast$obs)
+\begin{DoxyCompactList}\small\item\em Méthode permettant à un observateur de se retirer de la liste des écouteurs patentés du sujet d\textquotesingle{}observation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sujet_d_observation_a148acc7f82782cd27456f89252ca0c23}\label{class_sujet_d_observation_a148acc7f82782cd27456f89252ca0c23}} 
+\mbox{\hyperlink{class_sujet_d_observation_a148acc7f82782cd27456f89252ca0c23}{Sujet\+D\+Observation}} ()=default
+\begin{DoxyCompactList}\small\item\em Constructeur protégé pour éviter l\textquotesingle{}instanciation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sujet_d_observation_ab4a833d911377a2dd3c83ce8ce3ac540}{notifier\+Changement}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui se charge de prévenir les observateurs d\textquotesingle{}un changement d\textquotesingle{}état du sujet d\textquotesingle{}observation, en invoquant leur méthode rafraichir. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sujet_d_observation_aa4dce06573ce3c9a7d896010706ab781}\label{class_sujet_d_observation_aa4dce06573ce3c9a7d896010706ab781}} 
+std\+::set$<$ \mbox{\hyperlink{class_observateur}{Observateur}} $\ast$ $>$ \mbox{\hyperlink{class_sujet_d_observation_aa4dce06573ce3c9a7d896010706ab781}{mes\+Observateurs}}
+\begin{DoxyCompactList}\small\item\em Le vecteur d\textquotesingle{}observateurs enregistrés. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe de base de tout \char`\"{}sujet d\textquotesingle{}observation\char`\"{}. 
+
+Classe dont dérive toute source d\textquotesingle{}événement (ou \char`\"{}sujet d\textquotesingle{}observation\char`\"{}) du modèle de conception \char`\"{}\+Observateur / Sujet\+D\+Observation\char`\"{}.
+
+\begin{DoxyAuthor}{Auteur}
+G\+OF (?). 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_observateur}{Observateur}}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_sujet_d_observation_a697269174b77f64d270e839ab5557a1e}\label{class_sujet_d_observation_a697269174b77f64d270e839ab5557a1e}} 
+\index{SujetDObservation@{SujetDObservation}!attacher@{attacher}}
+\index{attacher@{attacher}!SujetDObservation@{SujetDObservation}}
+\subsubsection{\texorpdfstring{attacher()}{attacher()}}
+{\footnotesize\ttfamily void Sujet\+D\+Observation\+::attacher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observateur}{Observateur}} $\ast$}]{obs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode permettant à un observateur de s\textquotesingle{}enregistrer comme écouteur du sujet d\textquotesingle{}observation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em obs} & un pointeur vers le candidat observateur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sujet_d_observation_a05e8d7285a4f1c79d9f53e274653ea1b}\label{class_sujet_d_observation_a05e8d7285a4f1c79d9f53e274653ea1b}} 
+\index{SujetDObservation@{SujetDObservation}!detacher@{detacher}}
+\index{detacher@{detacher}!SujetDObservation@{SujetDObservation}}
+\subsubsection{\texorpdfstring{detacher()}{detacher()}}
+{\footnotesize\ttfamily void Sujet\+D\+Observation\+::detacher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observateur}{Observateur}} $\ast$}]{obs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode permettant à un observateur de se retirer de la liste des écouteurs patentés du sujet d\textquotesingle{}observation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em obs} & l\textquotesingle{}adresse de l\textquotesingle{}observateur désintéressé. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sujet_d_observation_ab4a833d911377a2dd3c83ce8ce3ac540}\label{class_sujet_d_observation_ab4a833d911377a2dd3c83ce8ce3ac540}} 
+\index{SujetDObservation@{SujetDObservation}!notifierChangement@{notifierChangement}}
+\index{notifierChangement@{notifierChangement}!SujetDObservation@{SujetDObservation}}
+\subsubsection{\texorpdfstring{notifierChangement()}{notifierChangement()}}
+{\footnotesize\ttfamily void Sujet\+D\+Observation\+::notifier\+Changement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Méthode qui se charge de prévenir les observateurs d\textquotesingle{}un changement d\textquotesingle{}état du sujet d\textquotesingle{}observation, en invoquant leur méthode rafraichir. 
+
+\begin{DoxySeeAlso}{Voir également}
+\mbox{\hyperlink{class_observateur_a4fcbecba73ee923d201246207b8470ce}{Observateur\+::rafraichir(\+Sujet\+D\+Observation $\ast$)}}. 
+\end{DoxySeeAlso}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+o\+\_\+sdo/\mbox{\hyperlink{sujetdobservation_8h}{sujetdobservation.\+h}}\item 
+o\+\_\+sdo/sujetdobservation.\+cpp\end{DoxyCompactItemize}

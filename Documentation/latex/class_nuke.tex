@@ -1,0 +1,149 @@
+\hypertarget{class_nuke}{}\section{Référence de la classe Nuke}
+\label{class_nuke}\index{Nuke@{Nuke}}
+
+
+{\ttfamily \#include $<$nuke.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Nuke\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_nuke}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nuke_aa45d3d8dc6e8a71a48f76a8d9fba046f}{Nuke}} (const \mbox{\hyperlink{class_point}{Point}} \&p, int r)
+\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_nuke_a5f32834b745ecf0b58197928af2053f6}{get\+Location}} () const
+\item 
+int \mbox{\hyperlink{class_nuke_ab04e87e07148c5f30f2e85af298baea2}{get\+Radius}} () const
+\item 
+bool \mbox{\hyperlink{class_nuke_a4ebcb9af0b1cb82d707e0e2103f989cd}{is\+Lighted\+Up}} () const
+\item 
+void \mbox{\hyperlink{class_nuke_a500330e76ec276823c1f758db82e59c6}{set\+Lighted\+Up}} (bool q)
+\item 
+\mbox{\hyperlink{class_ray}{Ray}} $\ast$ \mbox{\hyperlink{class_nuke_aa5b008c32d4189d23695c5e2652e1e30}{strike}} (\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&ray, \mbox{\hyperlink{class_point}{Point}} p)
+\item 
+void \mbox{\hyperlink{class_nuke_a10ed7d69df10cde51b39420943baad83}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget)
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_nuke_a9de8a2a72db7974fd22deac7ea5728a4}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_nuke}{Nuke}} \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Cette classe modélise les bombes utilisées dans le jeu. 
+
+Une bomnbe est un objet circulaire qui, si illuminé par un rayon, fait perdre la partie au joueur. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_nuke_aa45d3d8dc6e8a71a48f76a8d9fba046f}\label{class_nuke_aa45d3d8dc6e8a71a48f76a8d9fba046f}} 
+\index{Nuke@{Nuke}!Nuke@{Nuke}}
+\index{Nuke@{Nuke}!Nuke@{Nuke}}
+\subsubsection{\texorpdfstring{Nuke()}{Nuke()}}
+{\footnotesize\ttfamily Nuke\+::\+Nuke (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{p,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+Instancie une bombe en une position donnée avec un rayon déterminé. 
+\begin{DoxyParams}{Paramètres}
+{\em p} & la position de la bombe \\
+\hline
+{\em r} & le rayon de la bombe \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_nuke_a5f32834b745ecf0b58197928af2053f6}\label{class_nuke_a5f32834b745ecf0b58197928af2053f6}} 
+\index{Nuke@{Nuke}!getLocation@{getLocation}}
+\index{getLocation@{getLocation}!Nuke@{Nuke}}
+\subsubsection{\texorpdfstring{getLocation()}{getLocation()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_point}{Point}} \& Nuke\+::get\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la position de la bombe. \begin{DoxyReturn}{Renvoie}
+la position de la bombe. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nuke_ab04e87e07148c5f30f2e85af298baea2}\label{class_nuke_ab04e87e07148c5f30f2e85af298baea2}} 
+\index{Nuke@{Nuke}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Nuke@{Nuke}}
+\subsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily int Nuke\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne le rayon de la bombe. \begin{DoxyReturn}{Renvoie}
+le rayon de la bombe. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nuke_a4ebcb9af0b1cb82d707e0e2103f989cd}\label{class_nuke_a4ebcb9af0b1cb82d707e0e2103f989cd}} 
+\index{Nuke@{Nuke}!isLightedUp@{isLightedUp}}
+\index{isLightedUp@{isLightedUp}!Nuke@{Nuke}}
+\subsubsection{\texorpdfstring{isLightedUp()}{isLightedUp()}}
+{\footnotesize\ttfamily bool Nuke\+::is\+Lighted\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne vrai si la bombe est illuminée, faux sinon. \begin{DoxyReturn}{Renvoie}
+vrai si la bombe est illuminée, faux sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nuke_a10ed7d69df10cde51b39420943baad83}\label{class_nuke_a10ed7d69df10cde51b39420943baad83}} 
+\index{Nuke@{Nuke}!paint@{paint}}
+\index{paint@{paint}!Nuke@{Nuke}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Nuke\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{Q\+Widget $\ast$}]{widget }\end{DoxyParamCaption})}
+
+reemplementaion de la méthode paint. 
+\begin{DoxyParams}{Paramètres}
+{\em painter} & \\
+\hline
+{\em option} & \\
+\hline
+{\em widget} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nuke_a500330e76ec276823c1f758db82e59c6}\label{class_nuke_a500330e76ec276823c1f758db82e59c6}} 
+\index{Nuke@{Nuke}!setLightedUp@{setLightedUp}}
+\index{setLightedUp@{setLightedUp}!Nuke@{Nuke}}
+\subsubsection{\texorpdfstring{setLightedUp()}{setLightedUp()}}
+{\footnotesize\ttfamily void Nuke\+::set\+Lighted\+Up (\begin{DoxyParamCaption}\item[{bool}]{q }\end{DoxyParamCaption})}
+
+Illumine la bombe ou non. 
+\begin{DoxyParams}{Paramètres}
+{\em q} & vrai si la bombe est illuminée, faux sinon. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nuke_aa5b008c32d4189d23695c5e2652e1e30}\label{class_nuke_aa5b008c32d4189d23695c5e2652e1e30}} 
+\index{Nuke@{Nuke}!strike@{strike}}
+\index{strike@{strike}!Nuke@{Nuke}}
+\subsubsection{\texorpdfstring{strike()}{strike()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ray}{Ray}} $\ast$ Nuke\+::strike (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&}]{ray,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+reemplementation de la méthode strike 
+\begin{DoxyParams}{Paramètres}
+{\em ray} & un rayon a modifer par l\textquotesingle{}objet \\
+\hline
+{\em p} & le point trouve pour donner fin au rayon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un nouveau rayon si l\textquotesingle{}object autorise 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classobject_star_a5155713af07f8397057706a1eeb843ed}{object\+Star}}.
+
+
+
+\subsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_nuke_a9de8a2a72db7974fd22deac7ea5728a4}\label{class_nuke_a9de8a2a72db7974fd22deac7ea5728a4}} 
+\index{Nuke@{Nuke}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Nuke@{Nuke}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_nuke}{Nuke}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Surcharge l\textquotesingle{}opérateur de flux de sortie pour afficher un récapitulatif des caractéristiques de la bombe sous-\/jacente en console. \begin{DoxyReturn}{Renvoie}
+le flux dans lequel la bombe a été imprimée. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+metier\+\_\+abs/nuke.\+h\item 
+metier\+\_\+abs/nuke.\+cpp\end{DoxyCompactItemize}

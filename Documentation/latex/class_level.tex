@@ -1,0 +1,390 @@
+\hypertarget{class_level}{}\section{Référence de la classe Level}
+\label{class_level}\index{Level@{Level}}
+
+
+{\ttfamily \#include $<$level.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Level\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_level}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_level_a0350f00c8b282de634af2c09ec040bb8}{Level}} (int w, int h)
+\item 
+\mbox{\hyperlink{class_source}{Source}} $\ast$ \mbox{\hyperlink{class_level_a9398c949ef35d0e2b4cc159d39c1f61b}{get\+Src}} () const
+\item 
+void \mbox{\hyperlink{class_level_a772e71dd8937989d2f0718f1338e031f}{set\+Src}} (\mbox{\hyperlink{class_source}{Source}} $\ast$value)
+\item 
+\mbox{\hyperlink{class_dest}{Dest}} $\ast$ \mbox{\hyperlink{class_level_ab8a1974d8fe1c381dddb9cdfdf8bd929}{get\+Dest}} () const
+\item 
+void \mbox{\hyperlink{class_level_a49042f37e8ab0d6a8db43419783136fe}{set\+Dest}} (\mbox{\hyperlink{class_dest}{Dest}} $\ast$value)
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_wall}{Wall}} $\ast$ $>$ \& \mbox{\hyperlink{class_level_ad82a42f6a8d77da65dc012f5f8064d48}{get\+Walls}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_mirror}{Mirror}} $\ast$ $>$ \& \mbox{\hyperlink{class_level_a125da7c8f85b5fc14172dbe924dc2255}{get\+Mirrors}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_nuke}{Nuke}} $\ast$ $>$ \& \mbox{\hyperlink{class_level_af3d73dcf1b986955c2244da45590462d}{get\+Nukes}} () const
+\begin{DoxyCompactList}\small\item\em get\+Nukes \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_crystal}{Crystal}} $\ast$ $>$ \& \mbox{\hyperlink{class_level_afe7e7f6532c2b524e87f35bb592ec0d5}{get\+Crystals}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_lens}{Lens}} $\ast$ $>$ \& \mbox{\hyperlink{class_level_a38b9b969eb86aaea2824666960f797b7}{get\+Lenses}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_ray}{Ray}} $\ast$ $>$ \& \mbox{\hyperlink{class_level_a2e57737ceb0ed249c802cc6c47750b2e}{get\+Rays}} () const
+\item 
+void \mbox{\hyperlink{class_level_ad28d918ed43c60e845b8805cf9b6b139}{compute\+Rays}} ()
+\item 
+void \mbox{\hyperlink{class_level_a97fbfd21ea5677fe64fa8c7add169fff}{lecture\+Fichier}} (const string \&n\+Fichier)
+\begin{DoxyCompactList}\small\item\em lecture\+Fichier \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_a855bbc14e3a501596c10650fadbca437}{trace\+Beam}} (\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&beam)
+\begin{DoxyCompactList}\small\item\em trace\+Beam \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classobject_star}{object\+Star}} $\ast$ \mbox{\hyperlink{class_level_ae5d20d6ebaaa25760a0205505db48c36}{collide}} (\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&ray, \mbox{\hyperlink{class_point}{Point}} \&p)
+\begin{DoxyCompactList}\small\item\em collide \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_level_a7b4729d15b476dc19ec2c9a62c59ce56}{get\+\_\+line\+\_\+intersection}} (\mbox{\hyperlink{class_point}{Point}} p0, \mbox{\hyperlink{class_point}{Point}} p1, \mbox{\hyperlink{class_point}{Point}} p2, \mbox{\hyperlink{class_point}{Point}} p3, \mbox{\hyperlink{class_point}{Point}} \&p)
+\begin{DoxyCompactList}\small\item\em get\+\_\+line\+\_\+intersection \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_level_ad66171ce8e8fa75cce202d1c9557cae6}{get\+\_\+circle\+\_\+intersections}} (\mbox{\hyperlink{class_point}{Point}} p1, \mbox{\hyperlink{class_point}{Point}} p2, \mbox{\hyperlink{class_point}{Point}} sc, double r, std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points)
+\begin{DoxyCompactList}\small\item\em get\+\_\+circle\+\_\+intersections \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_level_abb9d591a6b4a10ba57b32a1662ef0e09}{get\+\_\+ellipse\+\_\+intersections}} (\mbox{\hyperlink{class_point}{Point}} p1, \mbox{\hyperlink{class_point}{Point}} p2, double Width, double Height, \mbox{\hyperlink{class_point}{Point}} pos, std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&points)
+\begin{DoxyCompactList}\small\item\em get\+\_\+ellipse\+\_\+intersections \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_level_ab8ca40a9dd500c2d46d557e937f08843}{get\+\_\+square\+\_\+intersections}} (\mbox{\hyperlink{class_point}{Point}} p1, \mbox{\hyperlink{class_point}{Point}} p2, \mbox{\hyperlink{class_point}{Point}} pos, int edge, \mbox{\hyperlink{class_point}{Point}} \&p)
+\begin{DoxyCompactList}\small\item\em get\+\_\+square\+\_\+intersections \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_level_ad26edebecbd623c348154eaf5e51cbb1}{get\+Last\+Index\+Object\+Touched}} () const
+\begin{DoxyCompactList}\small\item\em get\+Last\+Index\+Object\+Touched \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_level_a7195ddd0c73216532169a1f013513cda}{get\+Width}} () const
+\item 
+int \mbox{\hyperlink{class_level_a2bc17614afdfca9a7c7ea5771a70426a}{get\+Height}} () const
+\end{DoxyCompactItemize}
+\subsection*{Membres hérités additionnels}
+
+
+\subsection{Description détaillée}
+Modélise une carte telle qu\textquotesingle{}utilisée dans le jeu. 
+
+Une carte est un ensemble de composant tels que des murs, des miroirs, etc. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_level_a0350f00c8b282de634af2c09ec040bb8}\label{class_level_a0350f00c8b282de634af2c09ec040bb8}} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Instancie une carte de largeur et hauteur donnée. 
+
+Quand une carte est crée, quatre murs dénotant ses bords sont automatiquement ajoutés à la carte. 
+
+La source et la destination sont initialisées à des valeurs par défaut inutilisables. Vous devez manuellement initialiser la source et la destination via les fonctions appropriées. 
+\begin{DoxyParams}{Paramètres}
+{\em w} & la largeur de la carte \\
+\hline
+{\em h} & la heuteur de la carte \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_level_ae5d20d6ebaaa25760a0205505db48c36}\label{class_level_ae5d20d6ebaaa25760a0205505db48c36}} 
+\index{Level@{Level}!collide@{collide}}
+\index{collide@{collide}!Level@{Level}}
+\subsubsection{\texorpdfstring{collide()}{collide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classobject_star}{object\+Star}} $\ast$ Level\+::collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&}]{ray,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+collide 
+
+permet de savoir quel est l\textquotesingle{}intersection la plus proche ansi que son objet 
+\begin{DoxyParams}{Paramètres}
+{\em ray} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_ad28d918ed43c60e845b8805cf9b6b139}\label{class_level_ad28d918ed43c60e845b8805cf9b6b139}} 
+\index{Level@{Level}!computeRays@{computeRays}}
+\index{computeRays@{computeRays}!Level@{Level}}
+\subsubsection{\texorpdfstring{computeRays()}{computeRays()}}
+{\footnotesize\ttfamily void Level\+::compute\+Rays (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Change l\textquotesingle{}ensemble des rayons de la carte 
+\begin{DoxyParams}{Paramètres}
+{\em le} & nouvel ensemble de rayons de la carte\+Calcule les rayons lumineux de la carte. \\
+\hline
+\end{DoxyParams}
+Cette fonction doit être surchargée obligatoirement. \mbox{\Hypertarget{class_level_ad66171ce8e8fa75cce202d1c9557cae6}\label{class_level_ad66171ce8e8fa75cce202d1c9557cae6}} 
+\index{Level@{Level}!get\_circle\_intersections@{get\_circle\_intersections}}
+\index{get\_circle\_intersections@{get\_circle\_intersections}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\_circle\_intersections()}{get\_circle\_intersections()}}
+{\footnotesize\ttfamily bool Level\+::get\+\_\+circle\+\_\+intersections (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p1,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p2,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{sc,  }\item[{double}]{r,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+circle\+\_\+intersections 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+{\em sc} & \\
+\hline
+{\em r} & \\
+\hline
+{\em points} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_abb9d591a6b4a10ba57b32a1662ef0e09}\label{class_level_abb9d591a6b4a10ba57b32a1662ef0e09}} 
+\index{Level@{Level}!get\_ellipse\_intersections@{get\_ellipse\_intersections}}
+\index{get\_ellipse\_intersections@{get\_ellipse\_intersections}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\_ellipse\_intersections()}{get\_ellipse\_intersections()}}
+{\footnotesize\ttfamily bool Level\+::get\+\_\+ellipse\+\_\+intersections (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p1,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p2,  }\item[{double}]{Width,  }\item[{double}]{Height,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{pos,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ \&}]{points }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+ellipse\+\_\+intersections 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+{\em Width} & \\
+\hline
+{\em Height} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em points} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a7b4729d15b476dc19ec2c9a62c59ce56}\label{class_level_a7b4729d15b476dc19ec2c9a62c59ce56}} 
+\index{Level@{Level}!get\_line\_intersection@{get\_line\_intersection}}
+\index{get\_line\_intersection@{get\_line\_intersection}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\_line\_intersection()}{get\_line\_intersection()}}
+{\footnotesize\ttfamily bool Level\+::get\+\_\+line\+\_\+intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p0,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p1,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p2,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p3,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+line\+\_\+intersection 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p0} & \\
+\hline
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+{\em p3} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_ab8ca40a9dd500c2d46d557e937f08843}\label{class_level_ab8ca40a9dd500c2d46d557e937f08843}} 
+\index{Level@{Level}!get\_square\_intersections@{get\_square\_intersections}}
+\index{get\_square\_intersections@{get\_square\_intersections}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\_square\_intersections()}{get\_square\_intersections()}}
+{\footnotesize\ttfamily bool Level\+::get\+\_\+square\+\_\+intersections (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p1,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p2,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{pos,  }\item[{int}]{edge,  }\item[{\mbox{\hyperlink{class_point}{Point}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+square\+\_\+intersections 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em edge} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_afe7e7f6532c2b524e87f35bb592ec0d5}\label{class_level_afe7e7f6532c2b524e87f35bb592ec0d5}} 
+\index{Level@{Level}!getCrystals@{getCrystals}}
+\index{getCrystals@{getCrystals}!Level@{Level}}
+\subsubsection{\texorpdfstring{getCrystals()}{getCrystals()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_crystal}{Crystal}} $\ast$ $>$ \& Level\+::get\+Crystals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}ensemble des cristaux de la carte \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}ensemble des cristaux de la carte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_ab8a1974d8fe1c381dddb9cdfdf8bd929}\label{class_level_ab8a1974d8fe1c381dddb9cdfdf8bd929}} 
+\index{Level@{Level}!getDest@{getDest}}
+\index{getDest@{getDest}!Level@{Level}}
+\subsubsection{\texorpdfstring{getDest()}{getDest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dest}{Dest}} $\ast$ Level\+::get\+Dest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la desination de la carte \begin{DoxyReturn}{Renvoie}
+la destination de la carte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a2bc17614afdfca9a7c7ea5771a70426a}\label{class_level_a2bc17614afdfca9a7c7ea5771a70426a}} 
+\index{Level@{Level}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Level@{Level}}
+\subsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int Level\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la valeur de l\textquotesingle{}hauteur de level \begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_ad26edebecbd623c348154eaf5e51cbb1}\label{class_level_ad26edebecbd623c348154eaf5e51cbb1}} 
+\index{Level@{Level}!getLastIndexObjectTouched@{getLastIndexObjectTouched}}
+\index{getLastIndexObjectTouched@{getLastIndexObjectTouched}!Level@{Level}}
+\subsubsection{\texorpdfstring{getLastIndexObjectTouched()}{getLastIndexObjectTouched()}}
+{\footnotesize\ttfamily int Level\+::get\+Last\+Index\+Object\+Touched (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Last\+Index\+Object\+Touched 
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a38b9b969eb86aaea2824666960f797b7}\label{class_level_a38b9b969eb86aaea2824666960f797b7}} 
+\index{Level@{Level}!getLenses@{getLenses}}
+\index{getLenses@{getLenses}!Level@{Level}}
+\subsubsection{\texorpdfstring{getLenses()}{getLenses()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_lens}{Lens}} $\ast$ $>$ \& Level\+::get\+Lenses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}ensemble des lentilles de la carte \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}ensemble des lentilles de la carte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a125da7c8f85b5fc14172dbe924dc2255}\label{class_level_a125da7c8f85b5fc14172dbe924dc2255}} 
+\index{Level@{Level}!getMirrors@{getMirrors}}
+\index{getMirrors@{getMirrors}!Level@{Level}}
+\subsubsection{\texorpdfstring{getMirrors()}{getMirrors()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_mirror}{Mirror}} $\ast$ $>$ \& Level\+::get\+Mirrors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}ensemble des miroirs de la carte \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}ensemble des miroirs de la carte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_af3d73dcf1b986955c2244da45590462d}\label{class_level_af3d73dcf1b986955c2244da45590462d}} 
+\index{Level@{Level}!getNukes@{getNukes}}
+\index{getNukes@{getNukes}!Level@{Level}}
+\subsubsection{\texorpdfstring{getNukes()}{getNukes()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_nuke}{Nuke}} $\ast$ $>$ \& Level\+::get\+Nukes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Nukes 
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a2e57737ceb0ed249c802cc6c47750b2e}\label{class_level_a2e57737ceb0ed249c802cc6c47750b2e}} 
+\index{Level@{Level}!getRays@{getRays}}
+\index{getRays@{getRays}!Level@{Level}}
+\subsubsection{\texorpdfstring{getRays()}{getRays()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_ray}{Ray}} $\ast$ $>$ \& Level\+::get\+Rays (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}ensemble des rayons de la carte \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}ensemble des rayons de la carte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a9398c949ef35d0e2b4cc159d39c1f61b}\label{class_level_a9398c949ef35d0e2b4cc159d39c1f61b}} 
+\index{Level@{Level}!getSrc@{getSrc}}
+\index{getSrc@{getSrc}!Level@{Level}}
+\subsubsection{\texorpdfstring{getSrc()}{getSrc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_source}{Source}} $\ast$ Level\+::get\+Src (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la source de la carte. \begin{DoxyReturn}{Renvoie}
+la source de la carte. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_ad82a42f6a8d77da65dc012f5f8064d48}\label{class_level_ad82a42f6a8d77da65dc012f5f8064d48}} 
+\index{Level@{Level}!getWalls@{getWalls}}
+\index{getWalls@{getWalls}!Level@{Level}}
+\subsubsection{\texorpdfstring{getWalls()}{getWalls()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_wall}{Wall}} $\ast$ $>$ \& Level\+::get\+Walls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne l\textquotesingle{}ensemble des murs de la carte \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}ensemble des murs de la carte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a7195ddd0c73216532169a1f013513cda}\label{class_level_a7195ddd0c73216532169a1f013513cda}} 
+\index{Level@{Level}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Level@{Level}}
+\subsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int Level\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retourne la valeur de la longeur de level \begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a97fbfd21ea5677fe64fa8c7add169fff}\label{class_level_a97fbfd21ea5677fe64fa8c7add169fff}} 
+\index{Level@{Level}!lectureFichier@{lectureFichier}}
+\index{lectureFichier@{lectureFichier}!Level@{Level}}
+\subsubsection{\texorpdfstring{lectureFichier()}{lectureFichier()}}
+{\footnotesize\ttfamily void Level\+::lecture\+Fichier (\begin{DoxyParamCaption}\item[{const string \&}]{n\+Fichier }\end{DoxyParamCaption})}
+
+
+
+lecture\+Fichier 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n\+Fichier} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_a49042f37e8ab0d6a8db43419783136fe}\label{class_level_a49042f37e8ab0d6a8db43419783136fe}} 
+\index{Level@{Level}!setDest@{setDest}}
+\index{setDest@{setDest}!Level@{Level}}
+\subsubsection{\texorpdfstring{setDest()}{setDest()}}
+{\footnotesize\ttfamily void Level\+::set\+Dest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dest}{Dest}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+Change la destination de la carte 
+\begin{DoxyParams}{Paramètres}
+{\em value} & la destination de la carte \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_a772e71dd8937989d2f0718f1338e031f}\label{class_level_a772e71dd8937989d2f0718f1338e031f}} 
+\index{Level@{Level}!setSrc@{setSrc}}
+\index{setSrc@{setSrc}!Level@{Level}}
+\subsubsection{\texorpdfstring{setSrc()}{setSrc()}}
+{\footnotesize\ttfamily void Level\+::set\+Src (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_source}{Source}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+Change la source de la carte 
+\begin{DoxyParams}{Paramètres}
+{\em value} & la nouvelle source \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_a855bbc14e3a501596c10650fadbca437}\label{class_level_a855bbc14e3a501596c10650fadbca437}} 
+\index{Level@{Level}!traceBeam@{traceBeam}}
+\index{traceBeam@{traceBeam}!Level@{Level}}
+\subsubsection{\texorpdfstring{traceBeam()}{traceBeam()}}
+{\footnotesize\ttfamily void Level\+::trace\+Beam (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray}{Ray}} $\ast$\&}]{beam }\end{DoxyParamCaption})}
+
+
+
+trace\+Beam 
+
+permet de faire le calcul pour chaque rayon. 
+\begin{DoxyParams}{Paramètres}
+{\em beam} & \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+metier\+\_\+abs/level.\+h\item 
+metier\+\_\+abs/level.\+cpp\end{DoxyCompactItemize}
